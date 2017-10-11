@@ -1,20 +1,22 @@
 <?php
-namespace blockchain;
+namespace Blockchain;
 
-class blockchain
+class Blockchain
 {
     private $filename;
     private $magic;
     private $hashalg;
     private $hashlen;
     private $blksize;
+    private $dificulty;
 
-    function __construct($filename, $magic = 0xD5E8A97F, $hashalg = 'sha256', $hashlen = 32, $blksize = 17){
+    function __construct($filename,$dificulty = 4, $magic = 0xD5E8A97F, $hashalg = 'sha256', $hashlen = 32, $blksize = 17){
         $this->filename= $filename;
         $this->magic = $magic;
         $this->hashalg = $hashalg;
         $this->hashlen = $hashlen;
         $this->blksize = $blksize+$hashlen;
+        $this->dificulty = $dificulty;
     }
     public function getChain()
     {
@@ -55,11 +57,19 @@ class blockchain
     }
 
     public function isValid(){
+        //the 1st previous hash should be repeated 0's
         $blockHash = str_repeat('0', $this->hashlen);
+        //setup nonce correct nonce
+        $check = str_repeat('0', $this->dificulty);
+        //if chain is not empty
+        if(count ($this->getChain())!=0)
         foreach ($this->getChain() as $block){
-            if($blockHash != $block["prevhash"]) {
+            $subhash = substr($blockHash,0,$this->dificulty);
+            //if blocks previous has value is not the same as the next hash go to next
+            if($blockHash != $block["prevhash"]||$subhash != $check) {
                 return false;
             }else {
+                //set hash of current block to the previous block var
                 $blockHash = $block["blockhash"];
             }
         }
@@ -74,7 +84,7 @@ class blockchain
     {
         $indexfn = $this->filename . '.idx';
         if (file_exists($this->filename)) {
-            // get disk location of last block from index
+            // get bit location of last block from index file
             if (!$ix = fopen($indexfn, 'r+b')) return ("Can't open " . $indexfn);
             $maxblock = unpack('V', fread($ix, 4))[1];
             $zpos = (($maxblock * 8) - 4);
@@ -88,6 +98,7 @@ class blockchain
             $hash = hash($this->hashalg, $block);
             // add new block to the end of the chain
             fseek($bc, 0, SEEK_END);
+            //get start of block
             $pos = ftell($bc);
             $block = $this->calculateNonce($data,$hash);
             $this->write_block($bc,$block);
@@ -97,9 +108,9 @@ class blockchain
             fclose($ix);
             return TRUE;
         } else {
+            //setup genesis
             $bc = fopen($this->filename, 'wb');
             $ix = fopen($indexfn, 'wb');
-
             $block = $this->calculateNonce($data,str_repeat('00',$this->hashlen));
             $this->write_block($bc,$block);
             $this->update_index($ix, 0, strlen($data), 1);
@@ -137,10 +148,10 @@ class blockchain
 
     private function calculateNonce($data, $prevhash){
         $nonce = 0;
-        $check = str_repeat('0', 4);
+        $check = str_repeat('0', $this->dificulty);
         while(true){
             $block = $this->constructBlock($data, $prevhash, $nonce);
-            $subhash = substr((hash($this->hashalg, $block )),0,4);
+            $subhash = substr((hash($this->hashalg, $block )),0,$this->dificulty);
             if($check===$subhash){
                 return $block;
             }

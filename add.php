@@ -5,14 +5,17 @@
  * Date: 03/10/2017
  * Time: 03:32 PM
  */
-include_once ("blockchain.php");
-use blockchain\blockchain;
+include_once("Blockchain.php");
+use Blockchain\Blockchain;
 
 
-$blockchain = new blockchain("blockchain.dat");
+$blockchain = new Blockchain("blockchain.dat");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    print $blockchain->addBlock($_POST["data"]);
+    $data = array("data"=>$_POST["data"],
+        "signature"=>$_POST["sig"],
+        "public_key"=>$_POST["key"]);
+    $blockchain->addBlock(json_encode($data));
 }
 
-header( 'Location: /');
+//header( 'Location: /');

@@ -5,9 +5,11 @@
  * Date: 03/10/2017
  * Time: 10:32 AM
  */
-include_once ("blockchain.php");
-use blockchain\blockchain;
-$blockchain = new blockchain("blockchain.dat");
+include_once("Blockchain.php");
+include_once("BlockVerify.php");
+use Blockchain\Blockchain;
+use Blockchain\BlockVerify;
+$blockchain = new Blockchain("blockchain.dat");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,24 +26,6 @@ $blockchain = new blockchain("blockchain.dat");
     <span class="h1" class="navbar-brand mb-0">Block Chain</span>
 </nav>
 <div class="container">
-    <div class="row">
-    <div class="col">
-
-    <div class="card">
-        <div class="card-header">
-            Add New Block
-        </div>
-        <div class="card-body">
-            <form method="post" action="add.php">
-                <div class="form-group">
-                    <input class="form-control" type="text" name="data" placeholder="text">
-                </div>
-                <button class="btn btn-primary" type="submit" value="Add Block">Add Block</button>
-            </form>
-        </div>
-    </div>
-    </div>
-    </div>
     <br>
         <div class="row">
             <div class="col">
@@ -60,20 +44,25 @@ $blockchain = new blockchain("blockchain.dat");
     <tr>
         <th>Block</th>
         <th>Data</th>
+        <th>Key</th>
+        <th>Verified</th>
         <th>Time Stamp</th>
-        <th>Hash</th>
     </tr>
     </thead>
     <tbody>
     <?php
+    if(count ($blockchain->getChain())!=0)
         foreach (array_reverse($blockchain->getChain()) as $block) {
             ?>
     <tr>
         <?php
+        $data = json_decode($block["data"]);
+        $verfied = BlockVerify::verify($data->data,$data->public_key,$data->signature)? "Verified": "Unverfied";
         print "<th scope='row'>".$block['height']."</th>";
-        print "<th>".$block['data']."</th>";
+        print "<th>".$data->data."</th>";
+        print "<th>".sha1($data->public_key)."</th>";
+        print "<th>$verfied</th>";
         print "<th>".date("F j, Y, g:i:s a",$block['timestamp'])."</th>";
-        print "<th>".$block['blockhash']."</th>";
         }
         ?>
     </tr>
