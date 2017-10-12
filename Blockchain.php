@@ -101,10 +101,10 @@ class Blockchain
             //get start of block
             $pos = ftell($bc);
             $block = $this->calculateNonce($data,$hash);
-            $this->write_block($bc,$block);
+            $this->writeBlock($bc,$block);
             fclose($bc);
             // update index
-            $this->update_index($ix, $pos, strlen($data), ($maxblock + 1));
+            $this->updateIndex($ix, $pos, strlen($data), ($maxblock + 1));
             fclose($ix);
             return TRUE;
         } else {
@@ -112,15 +112,15 @@ class Blockchain
             $bc = fopen($this->filename, 'wb');
             $ix = fopen($indexfn, 'wb');
             $block = $this->calculateNonce($data,str_repeat('00',$this->hashlen));
-            $this->write_block($bc,$block);
-            $this->update_index($ix, 0, strlen($data), 1);
+            $this->writeBlock($bc,$block);
+            $this->updateIndex($ix, 0, strlen($data), 1);
             fclose($bc);
             fclose($ix);
             return TRUE;
         }
     }
 
-    private function write_block(&$fp, $data)
+    private function writeBlock(&$fp, $data)
     {
         fwrite($fp, $data);                // Data
     }
@@ -137,7 +137,7 @@ class Blockchain
         return $block;
     }
 
-    private function update_index(&$fp, $pos, $datalen, $count)
+    private function updateIndex(&$fp, $pos, $datalen, $count)
     {
         fseek($fp, 0, SEEK_SET);
         fwrite($fp, pack('V', $count), 4);                // Record count
@@ -157,6 +157,14 @@ class Blockchain
             }
             $nonce++;
         }
+    }
+
+    public function getBlock ($blockID){
+        $blockChain = $this->getChain();
+        foreach ($blockChain as $block)
+            if ($blockID == $block['height'])
+                return $block;
+        return null;
     }
 
     public function dumpIndex(){

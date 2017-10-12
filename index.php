@@ -51,18 +51,19 @@ $blockchain = new Blockchain("blockchain.dat");
     </thead>
     <tbody>
     <?php
-    if(count ($blockchain->getChain())!=0)
-        foreach (array_reverse($blockchain->getChain()) as $block) {
+    $chain = $blockchain->getChain();
+    if(count ($chain)!=0)
+        foreach (array_reverse($chain) as $block) {
             ?>
     <tr>
         <?php
         $data = json_decode($block["data"]);
         $verfied = BlockVerify::verify($data->data,$data->public_key,$data->signature)? "Verified": "Unverfied";
-        print "<th scope='row'>".$block['height']."</th>";
-        print "<th>".$data->data."</th>";
-        print "<th>".sha1($data->public_key)."</th>";
-        print "<th>$verfied</th>";
-        print "<th>".date("F j, Y, g:i:s a",$block['timestamp'])."</th>";
+        print "<th scope='row'><a href='blockinfo.php?block_id=".$block['height']."'>".$block['height']."</a></th>";
+        print "<td>".$data->data."</td>";
+        print "<td>".sha1($data->public_key)."</td>";
+        print "<td>$verfied</td>";
+        print "<td>".date("F j, Y, g:i:s a",$block['timestamp'])."</td>";
         }
         ?>
     </tr>
