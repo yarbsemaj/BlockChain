@@ -60,7 +60,19 @@ $blockchain = new Blockchain("blockchain.dat");
         $data = json_decode($block["data"]);
         $verfied = BlockVerify::verify($data->data,$data->public_key,$data->signature)? "Verified": "Unverfied";
         print "<th scope='row'><a href='blockinfo.php?block_id=".$block['height']."'>".$block['height']."</a></th>";
-        print "<td>".$data->data."</td>";
+        print "<td><table class=\"table\">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Data</th>
+    </tr>
+    </thead>
+    <tbody>";
+    foreach (json_decode($data->data,true)as $row){
+        print "<tr><td>".$row["name"]."</td>";
+        print "<td>".$row["value"]."</td></tr>";
+    }
+print"</tbody></table></td>";
         print "<td>".sha1($data->public_key)."</td>";
         print "<td>$verfied</td>";
         print "<td>".date("F j, Y, g:i:s a",$block['timestamp'])."</td>";
