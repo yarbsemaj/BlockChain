@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="af65c856-d0c4-4891-b778-aa8357360401" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlockVerify.php" afterPath="$PROJECT_DIR$/BlockVerify.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blockchain.php" afterPath="$PROJECT_DIR$/Blockchain.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,17 +18,17 @@
       <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
+            <state relative-caret-position="1224">
               <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
               <folding>
                 <element signature="e#156#182#0#PHP" expanded="true" />
@@ -48,7 +49,7 @@
       <file leaf-file-name="blockinfo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blockinfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
+            <state relative-caret-position="226">
               <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
               <folding>
                 <element signature="e#157#183#0#PHP" expanded="true" />
@@ -60,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlockVerify.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BlockVerify.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BlockVerify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="170">
+              <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -73,17 +74,30 @@
       <file leaf-file-name="Blockchain.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Blockchain.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="152" column="61" lean-forward="false" selection-start-line="152" selection-start-column="61" selection-end-line="152" selection-end-column="61" />
+            <state relative-caret-position="736">
+              <caret line="237" column="7" lean-forward="false" selection-start-line="237" selection-start-column="7" selection-end-line="237" selection-end-column="7" />
               <folding>
-                <element signature="e#186#531#0#PHP" expanded="false" />
-                <element signature="e#1753#2537#0#PHP" expanded="false" />
-                <element signature="e#2543#2641#0#PHP" expanded="false" />
-                <element signature="e#2647#4272#0#PHP" expanded="false" />
-                <element signature="e#4278#4381#0#PHP" expanded="false" />
-                <element signature="e#4387#5025#0#PHP" expanded="false" />
-                <element signature="e#5816#6037#0#PHP" expanded="false" />
-                <element signature="e#6043#6487#0#PHP" expanded="false" />
+                <element signature="e#187#625#0#PHP" expanded="false" />
+                <element signature="e#630#979#0#PHP" expanded="false" />
+                <element signature="e#985#1121#0#PHP" expanded="false" />
+                <element signature="e#1126#2337#0#PHP" expanded="false" />
+                <element signature="e#1918#2271#0#PHP" expanded="false" />
+                <element signature="e#2344#2504#0#PHP" expanded="false" />
+                <element signature="e#2509#3380#0#PHP" expanded="false" />
+                <element signature="e#3386#3612#0#PHP" expanded="false" />
+                <element signature="e#3722#3937#0#PHP" expanded="false" />
+                <element signature="e#3942#5751#0#PHP" expanded="false" />
+                <element signature="e#5757#5897#0#PHP" expanded="false" />
+                <element signature="e#5902#5982#0#PHP" expanded="false" />
+                <element signature="e#5988#6209#0#PHP" expanded="false" />
+                <element signature="e#6214#6867#0#PHP" expanded="false" />
+                <element signature="e#6873#7107#0#PHP" expanded="false" />
+                <element signature="e#7494#7719#0#PHP" expanded="false" />
+                <element signature="e#7724#8140#0#PHP" expanded="false" />
+                <element signature="e#8146#8336#0#PHP" expanded="false" />
+                <element signature="e#8341#8562#0#PHP" expanded="false" />
+                <element signature="e#8568#8646#0#PHP" expanded="false" />
+                <element signature="e#8651#9095#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -117,10 +131,10 @@
         <option value="$PROJECT_DIR$/testtest.php" />
         <option value="$PROJECT_DIR$/add.php" />
         <option value="$PROJECT_DIR$/blockchain.php" />
-        <option value="$PROJECT_DIR$/BlockVerify.php" />
-        <option value="$PROJECT_DIR$/Blockchain.php" />
         <option value="$PROJECT_DIR$/blockinfo.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Blockchain.php" />
+        <option value="$PROJECT_DIR$/BlockVerify.php" />
       </list>
     </option>
   </component>
@@ -176,6 +190,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -210,7 +225,8 @@
       <workItem from="1507022598093" duration="24235000" />
       <workItem from="1507299327515" duration="2092000" />
       <workItem from="1507724593257" duration="14522000" />
-      <workItem from="1507892029060" duration="1398000" />
+      <workItem from="1507892029060" duration="1810000" />
+      <workItem from="1508236567766" duration="3498000" />
     </task>
     <task id="LOCAL-00001" summary="Added RSA Signature verification">
       <created>1507737311336</created>
@@ -226,11 +242,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507808699206</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Sensor Reading">
+      <created>1507894706557</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1507894706557</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42247000" />
+    <option name="totallyTimeSpent" value="46157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -240,6 +263,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -251,7 +275,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -283,11 +306,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added RSA Signature verification" />
     <MESSAGE value="Added View Block info page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added View Block info page" />
+    <MESSAGE value="Added Sensor Reading" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Sensor Reading" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -332,14 +356,27 @@
         <state relative-caret-position="1258">
           <caret line="152" column="61" lean-forward="false" selection-start-line="152" selection-start-column="61" selection-end-line="152" selection-end-column="61" />
           <folding>
-            <element signature="e#186#531#0#PHP" expanded="false" />
-            <element signature="e#1753#2537#0#PHP" expanded="false" />
-            <element signature="e#2543#2641#0#PHP" expanded="false" />
-            <element signature="e#2647#4272#0#PHP" expanded="false" />
-            <element signature="e#4278#4381#0#PHP" expanded="false" />
-            <element signature="e#4387#5025#0#PHP" expanded="false" />
-            <element signature="e#5816#6037#0#PHP" expanded="false" />
-            <element signature="e#6043#6487#0#PHP" expanded="false" />
+            <element signature="e#187#625#0#PHP" expanded="false" />
+            <element signature="e#630#979#0#PHP" expanded="false" />
+            <element signature="e#985#1121#0#PHP" expanded="false" />
+            <element signature="e#1126#2337#0#PHP" expanded="false" />
+            <element signature="e#1918#2271#0#PHP" expanded="false" />
+            <element signature="e#2344#2504#0#PHP" expanded="false" />
+            <element signature="e#2509#3380#0#PHP" expanded="false" />
+            <element signature="e#3386#3612#0#PHP" expanded="false" />
+            <element signature="e#3722#3937#0#PHP" expanded="false" />
+            <element signature="e#3942#5751#0#PHP" expanded="false" />
+            <element signature="e#5757#5897#0#PHP" expanded="false" />
+            <element signature="e#5902#5982#0#PHP" expanded="false" />
+            <element signature="e#5988#6209#0#PHP" expanded="false" />
+            <element signature="e#6214#6867#0#PHP" expanded="false" />
+            <element signature="e#6873#7107#0#PHP" expanded="false" />
+            <element signature="e#7494#7719#0#PHP" expanded="false" />
+            <element signature="e#7724#8140#0#PHP" expanded="false" />
+            <element signature="e#8146#8336#0#PHP" expanded="false" />
+            <element signature="e#8341#8562#0#PHP" expanded="false" />
+            <element signature="e#8568#8646#0#PHP" expanded="false" />
+            <element signature="e#8651#9095#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -385,14 +422,27 @@
         <state relative-caret-position="340">
           <caret line="63" column="67" lean-forward="false" selection-start-line="63" selection-start-column="67" selection-end-line="63" selection-end-column="67" />
           <folding>
-            <element signature="e#186#531#0#PHP" expanded="false" />
-            <element signature="e#1753#2537#0#PHP" expanded="false" />
-            <element signature="e#2543#2641#0#PHP" expanded="false" />
-            <element signature="e#2647#4272#0#PHP" expanded="false" />
-            <element signature="e#4278#4381#0#PHP" expanded="false" />
-            <element signature="e#4387#5025#0#PHP" expanded="false" />
-            <element signature="e#5816#6037#0#PHP" expanded="false" />
-            <element signature="e#6043#6487#0#PHP" expanded="false" />
+            <element signature="e#187#625#0#PHP" expanded="false" />
+            <element signature="e#630#979#0#PHP" expanded="false" />
+            <element signature="e#985#1121#0#PHP" expanded="false" />
+            <element signature="e#1126#2337#0#PHP" expanded="false" />
+            <element signature="e#1918#2271#0#PHP" expanded="false" />
+            <element signature="e#2344#2504#0#PHP" expanded="false" />
+            <element signature="e#2509#3380#0#PHP" expanded="false" />
+            <element signature="e#3386#3612#0#PHP" expanded="false" />
+            <element signature="e#3722#3937#0#PHP" expanded="false" />
+            <element signature="e#3942#5751#0#PHP" expanded="false" />
+            <element signature="e#5757#5897#0#PHP" expanded="false" />
+            <element signature="e#5902#5982#0#PHP" expanded="false" />
+            <element signature="e#5988#6209#0#PHP" expanded="false" />
+            <element signature="e#6214#6867#0#PHP" expanded="false" />
+            <element signature="e#6873#7107#0#PHP" expanded="false" />
+            <element signature="e#7494#7719#0#PHP" expanded="false" />
+            <element signature="e#7724#8140#0#PHP" expanded="false" />
+            <element signature="e#8146#8336#0#PHP" expanded="false" />
+            <element signature="e#8341#8562#0#PHP" expanded="false" />
+            <element signature="e#8568#8646#0#PHP" expanded="false" />
+            <element signature="e#8651#9095#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -444,14 +494,27 @@
         <state relative-caret-position="340">
           <caret line="63" column="67" lean-forward="false" selection-start-line="63" selection-start-column="67" selection-end-line="63" selection-end-column="67" />
           <folding>
-            <element signature="e#186#531#0#PHP" expanded="false" />
-            <element signature="e#1753#2537#0#PHP" expanded="false" />
-            <element signature="e#2543#2641#0#PHP" expanded="false" />
-            <element signature="e#2647#4272#0#PHP" expanded="false" />
-            <element signature="e#4278#4381#0#PHP" expanded="false" />
-            <element signature="e#4387#5025#0#PHP" expanded="false" />
-            <element signature="e#5816#6037#0#PHP" expanded="false" />
-            <element signature="e#6043#6487#0#PHP" expanded="false" />
+            <element signature="e#187#625#0#PHP" expanded="false" />
+            <element signature="e#630#979#0#PHP" expanded="false" />
+            <element signature="e#985#1121#0#PHP" expanded="false" />
+            <element signature="e#1126#2337#0#PHP" expanded="false" />
+            <element signature="e#1918#2271#0#PHP" expanded="false" />
+            <element signature="e#2344#2504#0#PHP" expanded="false" />
+            <element signature="e#2509#3380#0#PHP" expanded="false" />
+            <element signature="e#3386#3612#0#PHP" expanded="false" />
+            <element signature="e#3722#3937#0#PHP" expanded="false" />
+            <element signature="e#3942#5751#0#PHP" expanded="false" />
+            <element signature="e#5757#5897#0#PHP" expanded="false" />
+            <element signature="e#5902#5982#0#PHP" expanded="false" />
+            <element signature="e#5988#6209#0#PHP" expanded="false" />
+            <element signature="e#6214#6867#0#PHP" expanded="false" />
+            <element signature="e#6873#7107#0#PHP" expanded="false" />
+            <element signature="e#7494#7719#0#PHP" expanded="false" />
+            <element signature="e#7724#8140#0#PHP" expanded="false" />
+            <element signature="e#8146#8336#0#PHP" expanded="false" />
+            <element signature="e#8341#8562#0#PHP" expanded="false" />
+            <element signature="e#8568#8646#0#PHP" expanded="false" />
+            <element signature="e#8651#9095#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -462,14 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="2239" column="9" lean-forward="false" selection-start-line="2239" selection-start-column="9" selection-end-line="2239" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_7.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2236">
-          <caret line="169" column="9" lean-forward="false" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -497,14 +552,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testtest.php" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="822" column="9" lean-forward="false" selection-start-line="822" selection-start-column="9" selection-end-line="822" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/KeyTest.php" />
     <entry file="file://$PROJECT_DIR$/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -515,31 +562,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/publickey.key" />
     <entry file="file://$PROJECT_DIR$/privatekey.key" />
-    <entry file="file://$PROJECT_DIR$/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Blockchain.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="152" column="61" lean-forward="false" selection-start-line="152" selection-start-column="61" selection-end-line="152" selection-end-column="61" />
-          <folding>
-            <element signature="e#186#531#0#PHP" expanded="false" />
-            <element signature="e#1753#2537#0#PHP" expanded="false" />
-            <element signature="e#2543#2641#0#PHP" expanded="false" />
-            <element signature="e#2647#4272#0#PHP" expanded="false" />
-            <element signature="e#4278#4381#0#PHP" expanded="false" />
-            <element signature="e#4387#5025#0#PHP" expanded="false" />
-            <element signature="e#5816#6037#0#PHP" expanded="false" />
-            <element signature="e#6043#6487#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="655">
@@ -548,30 +570,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlockVerify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-          <folding>
-            <element signature="e#157#183#0#PHP" expanded="true" />
-            <marker date="1507806287635" expanded="true" signature="1746:1768" ph="..." />
-            <marker date="1507806287635" expanded="true" signature="2003:2049" ph="..." />
-            <marker date="1507806287635" expanded="true" signature="2129:2151" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="1224">
           <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
           <folding>
             <element signature="e#156#182#0#PHP" expanded="true" />
@@ -585,6 +586,97 @@
             <marker date="1507892818605" expanded="true" signature="1921:1975" ph="..." />
             <marker date="1507892818605" expanded="true" signature="2000:2171" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blockinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+          <folding>
+            <element signature="e#157#183#0#PHP" expanded="true" />
+            <marker date="1507806287635" expanded="true" signature="1746:1768" ph="..." />
+            <marker date="1507806287635" expanded="true" signature="2003:2049" ph="..." />
+            <marker date="1507806287635" expanded="true" signature="2129:2151" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="215" column="9" lean-forward="false" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="857" column="9" lean-forward="false" selection-start-line="857" selection-start-column="9" selection-end-line="857" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_7.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="164" column="15" lean-forward="false" selection-start-line="164" selection-start-column="10" selection-end-line="164" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/_standard_manual.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="40" column="9" lean-forward="false" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blockchain.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="237" column="7" lean-forward="false" selection-start-line="237" selection-start-column="7" selection-end-line="237" selection-end-column="7" />
+          <folding>
+            <element signature="e#187#625#0#PHP" expanded="false" />
+            <element signature="e#630#979#0#PHP" expanded="false" />
+            <element signature="e#985#1121#0#PHP" expanded="false" />
+            <element signature="e#1126#2337#0#PHP" expanded="false" />
+            <element signature="e#1918#2271#0#PHP" expanded="false" />
+            <element signature="e#2344#2504#0#PHP" expanded="false" />
+            <element signature="e#2509#3380#0#PHP" expanded="false" />
+            <element signature="e#3386#3612#0#PHP" expanded="false" />
+            <element signature="e#3722#3937#0#PHP" expanded="false" />
+            <element signature="e#3942#5751#0#PHP" expanded="false" />
+            <element signature="e#5757#5897#0#PHP" expanded="false" />
+            <element signature="e#5902#5982#0#PHP" expanded="false" />
+            <element signature="e#5988#6209#0#PHP" expanded="false" />
+            <element signature="e#6214#6867#0#PHP" expanded="false" />
+            <element signature="e#6873#7107#0#PHP" expanded="false" />
+            <element signature="e#7494#7719#0#PHP" expanded="false" />
+            <element signature="e#7724#8140#0#PHP" expanded="false" />
+            <element signature="e#8146#8336#0#PHP" expanded="false" />
+            <element signature="e#8341#8562#0#PHP" expanded="false" />
+            <element signature="e#8568#8646#0#PHP" expanded="false" />
+            <element signature="e#8651#9095#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockVerify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
